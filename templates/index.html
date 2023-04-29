@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" contents="width=device-width",initial-scale=1.0>
+        <title>Company sentiment analysis</title>
+    </head>
+    <body style="background: black;">
+        <div class="login">
+            <h1 style ="color:violet;">
+            <form action="{{url_for('predict')}}"method="post">
+                <input type="text" name ="company comment" placeholder="Write the sentiment to want to find out about a comment">
+                <button type="submit" class="btn">predict the sentiment</button>
+
+
+
+            </form>
+            <br>
+            <br>
+            <h4 style="color:green">{{pred}}</h4>
+        
+        
+        
+        </div>
+        
+    </body>
+</html>
